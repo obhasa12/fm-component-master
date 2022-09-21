@@ -1,3 +1,26 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
 footer{
+    padding: 30px 24px;
+    color: v.$cl-neutral-lt-gray;
     background-color: #4ABEBD;
+    @include m.breakpoints-up(large){
+        padding: 44px 40px;
+        width: 318px;
+        height: 290px;
+    }
+}
+.footer{
+    &__header{
+        margin-bottom: 23px;
+        color: white;
+    }
+
+    &__list{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        line-height: 23px;
+    }
 }

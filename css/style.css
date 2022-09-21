@@ -13,14 +13,37 @@ html, body, h1, h2, h3, p {
 }
 
 body {
+  margin: 72px 32px;
   font-family: "Karla", sans-serif;
   font-size: 1rem;
+  background-color: #E6EFF6;
+}
+@media (min-width: 64em) {
+  body {
+    margin: 120px 346px;
+    display: flex;
+    max-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 header {
-  margin: 0 24px;
-  margin-top: 32px;
-  margin-bottom: 37px;
+  padding: 0 24px;
+  padding-top: 32px;
+  padding-bottom: 37px;
+  background-color: #fff;
+}
+@media (min-width: 64em) {
+  header {
+    padding: 46px 0;
+    padding-right: 67px;
+    padding-left: 42px;
+    max-width: 637px;
+    height: 246px;
+  }
 }
 
 .header h1 {
@@ -28,12 +51,23 @@ header {
   font-size: 21px;
   color: hsl(179deg, 62%, 43%);
 }
+@media (min-width: 64em) {
+  .header h1 {
+    margin-bottom: 28px;
+  }
+}
 .header__subtitle {
   margin-bottom: 26px;
   padding-right: 19px;
   font-size: 1rem;
+  font-weight: 700;
   color: hsl(71deg, 73%, 54%);
   line-height: 22px;
+}
+@media (min-width: 64em) {
+  .header__subtitle {
+    margin-bottom: 28px;
+  }
 }
 .header__description {
   color: hsl(218deg, 22%, 67%);
@@ -46,15 +80,33 @@ main {
   padding-bottom: 24px;
   background-color: #2BB3B1;
 }
+@media (min-width: 64em) {
+  main {
+    padding: 46px 41px;
+    width: 321px;
+    height: 290px;
+  }
+}
 
 .main__header {
   margin-bottom: 22px;
   color: hsl(204deg, 43%, 93%);
 }
+@media (min-width: 64em) {
+  .main__header {
+    font-size: 22px;
+    margin-bottom: 24px;
+  }
+}
 .main__price {
   margin-bottom: 1rem;
   font-weight: 300;
   color: hsla(204deg, 43%, 93%, 0.7);
+}
+@media (min-width: 64em) {
+  .main__price {
+    margin-bottom: 13px;
+  }
 }
 .main__dollar {
   margin-right: 10px;
@@ -65,6 +117,12 @@ main {
 .main__description {
   margin-bottom: 34px;
   color: hsl(204deg, 43%, 93%);
+}
+@media (min-width: 64em) {
+  .main__description {
+    margin-bottom: 33px;
+    font-size: 15px;
+  }
 }
 
 .button {
@@ -79,5 +137,25 @@ main {
 }
 
 footer {
+  padding: 30px 24px;
+  color: hsl(204deg, 43%, 93%);
   background-color: #4ABEBD;
+}
+@media (min-width: 64em) {
+  footer {
+    padding: 44px 40px;
+    width: 318px;
+    height: 290px;
+  }
+}
+
+.footer__header {
+  margin-bottom: 23px;
+  color: white;
+}
+.footer__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  line-height: 23px;
 }/*# sourceMappingURL=style.css.map */

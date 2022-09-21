@@ -1,21 +1,34 @@
 @use 'variables' as v;
+@use 'mixins' as m;
 main{
     padding: 0 24px;
     padding-top: 28px;
     padding-bottom: 24px;
     background-color: #2BB3B1;
+    @include m.breakpoints-up(large){
+        padding: 46px 41px;
+        width: 321px;
+        height: 290px;
+    }
 }
 
 .main{
     &__header{
         margin-bottom: 22px;
         color: v.$cl-neutral-lt-gray;
+        @include m.breakpoints-up(large){
+            font-size: 22px;
+            margin-bottom: 24px;
+        }
     }
     
     &__price{
         margin-bottom: 1rem;
         font-weight: 300;
         color: hsla(204, 43%, 93%,0.7);
+        @include m.breakpoints-up(large){
+            margin-bottom: 13px;
+        }
     }
 
     &__dollar{
@@ -28,6 +41,10 @@ main{
     &__description{
         margin-bottom: 34px;
         color: v.$cl-neutral-lt-gray;
+        @include m.breakpoints-up(large){
+            margin-bottom: 33px;
+            font-size: 15px;
+        }
     }
 }
 
